@@ -1,0 +1,15 @@
+../biccoca-Debug-AUT/B25b_0.000-lc-44-type-local-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-44-type-localGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-44-type-random-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-44-type-randomGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-44-type-allRandom-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-178-type-local-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-178-type-localGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-178-type-random-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-178-type-randomGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-178-type-allRandom-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-312-type-local-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-312-type-localGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-312-type-random-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-312-type-randomGrouped-n-1-AUT.g2o
+../biccoca-Debug-AUT/B25b_0.000-lc-312-type-allRandom-n-1-AUT.g2o

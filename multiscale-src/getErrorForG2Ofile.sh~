@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <input-g2o-file> <chi2Error-FileName>" >&2
+    echo "input-g2o-file : The g2o file to be optimised"
+    echo "chi2Error-FileName: fileName to store the chi2Error"
+    exit 1
+fi
+
+# -- Initialize
+inputFileName=$1
+outputDataFile=$2
+tmpFile="20160311-tmpFile.txt"
+
+# -- check if outputFile exists, if exist, then delete
+if [ -e "$outputDataFile" ];then
+    rm $outputDataFile
+fi
+
+# -- output the data in the files
+exec 3>&1 4>&2          # redirect output
+exec >$tmpFile 2>&1     # redirect output to file $tmpFile
+g2o -i 2 -v $inputFileName
+exec >&3 2>&4           # reinstance output on screen
+finaloptchi=`cat $tmpFile | grep 'iteration=' | tail -n1 | cut -d' ' -f4`
+nEdges=`cat $tmpFile  | grep "iteration=" | tail -n1 | cut -d' ' -f10`
+avgOptChi=`./getAvgChi2Error.o $finaloptchi $nEdges`
+echo "$avgOptChi" >> $outputDataFile
+rm $tmpFile
